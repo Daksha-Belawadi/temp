@@ -1,15 +1,15 @@
 import sys
-if len(sys.argv)!=2:
-temp=float(sys.argv[1])
-print(usage:python temp.py <temperature>)
+if len(sys.argv) == 2:
+    temp = float(sys.argv[1])
+    print("User provided temperature:")
 else:
-temp=25
-print("No input- using deafult temp")
+    temp = 25
+    print("No input given - using default temperature:")
 if temp < 15:
-  status = "cold"
-elif temp<= 30:
-  status = "normal"
+    status = "Cold"
+elif temp <= 30:
+    status = "Normal"
 else:
-  status = "hot"
+    status = "Hot"
+print("Temperature Status:", status)
 
-print("Temperature Status",status)
